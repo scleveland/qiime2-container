@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3
 
-RUN export QIIME2_RELEASE="2019.7"
+ENV QIIME2_RELEASE "2019.7"
 
 ENV PATH /opt/conda/envs/qiime2-${QIIME2_RELEASE}/bin:$PATH
 ENV LC_ALL C.UTF-8
